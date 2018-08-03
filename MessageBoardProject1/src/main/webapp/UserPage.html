@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UserPage</title>
+		
+	</head>
+	<body>
+		<form action="LoginServlet" method="get">
+			<input type="submit" value="Logout" />
+		</form>
+		
+		
+		<button type="button" onclick = "loadDashboard()">View Dashboard</button>
+		
+		<button type="button" onclick = "loadAllTopics()">View All Topics</button>
+		
+		<button type="button" onclick = "loadReplies()">View Your Replies</button>
+		
+		<button type="button" onclick = "viewProfile()">View Your Profile</button>
+		
+		<form action = "NewContentServlet" method = "post">
+			New Topic: <input type = "text" name = "newTopicName"/><br/>
+			Description: <textarea name = "description"></textarea><br/>
+			<input type = "submit" value = "Create Topic"/><br/>
+		</form>
+		
+		<p id = "view"></p>
+		
+	</body>
+
+	<script src = "MessageBoard.js"></script>
+</html>

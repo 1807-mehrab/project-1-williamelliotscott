@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AdminPage</title>
+		
+	</head>
+	<body>
+		<form action="LoginServlet" method="get">
+			<input type="submit" value="Logout" />
+		</form>
+		
+		<form action="PostServlet" method="get">
+			<input type="submit" value="Load Dash" />
+		</form>
+		
+		<form action="PostServlet" method="post">
+			<input type="submit" value="Load all Topics" />
+		</form>
+		
+		<form action="ReplyServlet" method="post">
+			<input type="submit" value="View your Replies" />
+		</form>
+		
+		<form action = "NewContentServlet" method = "post">
+			New Topic: <input type = "text" name = "newTopicName"/><br/>
+			Description: <textarea name = "description"></textarea><br/>
+			<input type = "submit" value = "Create Topic"/><br/>
+		</form>
+		
+	</body>
+
+	<script>
+			
+	</script>
+</html>
